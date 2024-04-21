@@ -21,6 +21,10 @@ public class TimeFormatter implements Formatter<Time> {
 
     @Override
     public String print(Time object, Locale locale) {
-        return String.format("%dh, %dm, %ds", object.getHours(), object.getMinutes(), object.getSeconds());
+        long seconds = object.getSeconds();
+        long minutes = object.getMinutes();
+        long hours = object.getHours();
+        seconds = seconds + minutes*60+hours*3600;
+        return String.format("%ds", seconds);
     }
 }
