@@ -13,10 +13,4 @@ public class FitnessTrackerWebApplication {
 		SpringApplication.run(FitnessTrackerWebApplication.class, args);
 	}
 
-	@Bean
-	public ConfigurableServletWebServerFactory webServerFactory() {
-		TomcatServletWebServerFactory factory = new TomcatServletWebServerFactory();
-		factory.setPort(8080);
-		return factory;
-	}
 }
