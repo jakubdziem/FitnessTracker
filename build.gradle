@@ -36,3 +36,9 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+bootJar {
+	archiveBaseName = 'fitnesstracker_web'
+	archiveVersion = '0.0.1'
+}
+
+build.mustRunAfter clean
