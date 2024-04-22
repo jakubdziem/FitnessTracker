@@ -2,7 +2,6 @@ package com.dziem.fitnesstrackerweb.web.controller;
 
 import com.dziem.fitnesstrackerweb.biz.model.Exercise;
 import com.dziem.fitnesstrackerweb.biz.service.ExerciseService;
-import com.dziem.fitnesstrackerweb.data.ExerciseRepository;
 import jakarta.validation.Valid;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.data.domain.Page;

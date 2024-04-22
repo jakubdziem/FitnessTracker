@@ -4,8 +4,9 @@ import com.dziem.fitnesstrackerweb.web.formatter.TimeFormatter;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import jakarta.persistence.criteria.CriteriaBuilder;
-import jakarta.validation.constraints.*;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,8 +14,6 @@ import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 import java.sql.Time;
 import java.text.ParseException;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
 @Data
@@ -36,7 +35,6 @@ public class Exercise {
     @NotNull(message = "Duration must be specified.")
     private Time duration;
     @NotNull(message = "Weight must be specified.")
-    @DecimalMin(value="0.25", message = "Weight must be at least 0.25")
     private BigDecimal weight;
 
     public static Exercise parse(String csvLine) {
