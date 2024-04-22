@@ -16,9 +16,3 @@
 <li>Thymeleaf - integrating dynamic data from a server-side application into the web page, enabling features like conditionally rendering elements, and displaying validation errors alongside form inputs, enhancing the interactivity and flexibility of the HealthHarbor form.</li>
 <li>Bootstrap - enhancing the visual presentation and functionality of a HealthHarbor form, implementing responsive design and styling elements provided by Bootstrap's CSS classes and components</li>
 </ul>
-<h2>Here are some overview pictures:</h2>
-<b>Main page</b>
-![Zrzut ekranu 2024-04-22 074707](https://github.com/jakubdziem/FitnessTracker/blob/main/Zrzut%20ekranu%202024-04-22%20074707.png)
-![Zrzut ekranu 2024-04-22 074729](https://github.com/jakubdziem/FitnessTracker/blob/main/Zrzut%20ekranu%202024-04-22%20074729.png)
-<b>Error page</b>
-![Zrzut ekranu 2024-04-22 074751](https://github.com/jakubdziem/FitnessTracker/blob/main/Zrzut%20ekranu%202024-04-22%20074751.png)
