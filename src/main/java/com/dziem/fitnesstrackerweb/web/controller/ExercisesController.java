@@ -80,4 +80,8 @@ public class ExercisesController {
         }
         return "redirect:exercises";
     }
+    @ExceptionHandler(StringIndexOutOfBoundsException.class)
+    public String emptyFileError() {
+        return "emptyFileError";
+    }
 }

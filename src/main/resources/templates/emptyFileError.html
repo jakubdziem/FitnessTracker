@@ -21,10 +21,13 @@
         </ul>
     </div>
 </nav>
-<h3 class="text-center">
-    Something went wrong go to the home page:
-    <a class="nav-link" th:href="@{exercises}">Home</a>
-    Please report this error to our team: example@example.com
-</h3>
+<div class="text-center">
+    <h3>You uploaded file that doesn't suit file format for this web app. </h3>
+    <h4>Example of file that suits format</h4>
+    <img src="../static/Example file that suits format notepad.png" alt="file that suits format">
+    <br>
+    <a href="../static/exampleFile.csv" download="file_format.csv">Download csv file with format.</a>
+    <h3><a class="nav-link" th:href="@{exercises}">Home</a></h3>
+</div>
 </body>
 </html>
