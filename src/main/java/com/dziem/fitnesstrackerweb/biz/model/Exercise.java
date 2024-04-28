@@ -3,6 +3,7 @@ package com.dziem.fitnesstrackerweb.biz.model;
 import com.dziem.fitnesstrackerweb.web.formatter.TimeFormatter;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
@@ -22,7 +23,7 @@ import java.util.Locale;
 @Entity
 public class Exercise {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     @NotEmpty(message = "Name of the exercise must be defined.")
     private String name;
