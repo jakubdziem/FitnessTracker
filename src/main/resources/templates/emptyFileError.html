@@ -16,7 +16,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" th:href="@{exercises}">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" th:href="@{exercises}">Home</a>
             </li>
         </ul>
     </div>
@@ -24,9 +24,9 @@
 <div class="text-center">
     <h3>You uploaded file that doesn't suit file format for this web app. </h3>
     <h4>Example of file that suits format</h4>
-    <img src="../static/Example file that suits format notepad.png" alt="file that suits format">
+    <img th:src="@{images/Example file that suits format notepad.png}" alt="file that suits format">
     <br>
-    <a href="../static/exampleFile.csv" download="file_format.csv">Download csv file with format.</a>
+    <a th:href="@{files/exampleFile.csv}" download="file_format.csv">Download csv file with format.</a>
     <h3><a class="nav-link" th:href="@{exercises}">Home</a></h3>
 </div>
 </body>
