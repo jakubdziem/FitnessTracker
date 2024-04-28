@@ -23,10 +23,10 @@
 </nav>
 <div class="text-center">
     <h3>You uploaded file that doesn't suit file format for this web app. </h3>
-    <h4>Example of file that suits format</h4>
+    <h4>Example of file that suits format:</h4>
     <img th:src="@{images/Example file that suits format notepad.png}" alt="file that suits format">
     <br>
-    <a th:href="@{files/exampleFile.csv}" download="file_format.csv">Download csv file with format.</a>
+    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" th:href="@{files/exampleFile.csv}" download="file_format.csv">Download csv file with format.</a>
     <h3><a class="nav-link" th:href="@{exercises}">Home</a></h3>
 </div>
 </body>
