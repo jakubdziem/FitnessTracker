@@ -1,6 +1,5 @@
 package com.dziem.fitnesstrackerweb.web.controller;
 
-import com.dziem.fitnesstrackerweb.biz.model.Exercise;
 import com.dziem.fitnesstrackerweb.biz.model.SuggestedExercise;
 import com.dziem.fitnesstrackerweb.biz.service.SuggestedExerciseService;
 import lombok.extern.log4j.Log4j2;
