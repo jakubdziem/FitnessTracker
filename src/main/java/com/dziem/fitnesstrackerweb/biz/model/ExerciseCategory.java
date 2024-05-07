@@ -1,6 +1,9 @@
 package com.dziem.fitnesstrackerweb.biz.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,14 +12,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class SuggestedExercise {
+public class ExerciseCategory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    @Column(length=1000)
-    private String description;
-    @ManyToOne
-    @JoinColumn(name = "category_id", referencedColumnName = "id")
-    private ExerciseCategory category;
 }
