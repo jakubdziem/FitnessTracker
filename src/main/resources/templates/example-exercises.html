@@ -25,16 +25,26 @@
     </div>
 </nav>
 <div class="col-md-8 col-sm-11 mx-auto my-5 table-responsive">
-    <table class="table text-white align-middle">
+    <table class="table text-white align-middle" th:each="exerciseCategory : ${exerciseCategories}">
+
+        <thead>
+        <tr>
+            <td colspan="3" th:class="text-center" th:text="${exerciseCategory.name}">Error</td>
+        </tr>
+        </thead>
         <tbody>
-<!--        <tr th:if="${#lists.isEmpty(exampleExercises)}">-->
-<!--            <td colspan="3" th:class="text-center">No Data</td>-->
-<!--        </tr>-->
-        <tr th:each="exampleExercise : ${exampleExercises}">
-            <th scope="row" th:text="${exampleExercise.id}">1</th>
+        <tr th:if="${#lists.isEmpty(exampleExercises)}">
+            <td colspan="3" th:class="text-center">No Data</td>
+        </tr>
+        <tr th:each="exampleExercise : ${exampleExercises}" th:if="${exerciseCategory.id}==${exampleExercise.category.id}">
+<!--            <th scope="row" th:text="${exampleExercise.id}">1</th>-->
             <td th:text="${exampleExercise.name}">Mark</td>
             <td th:text="${exampleExercise.description}">@mdo</td>
         </tr>
+<!--        <tr th:each="exerciseCategory : ${exerciseCategories}">-->
+<!--            <th scope="row" th:text="${exerciseCategory.id}">1</th>-->
+<!--            <td th:text="${exerciseCategory.name}">Mark</td>-->
+<!--        </tr>-->
         </tbody>
     </table>
 </div>
