@@ -16,6 +16,8 @@ public class SuggestedExercise {
     private String name;
     @Column(length=1000)
     private String description;
+    @Column(length=1000)
+    private String link;
     @ManyToOne
     @JoinColumn(name = "category_id", referencedColumnName = "id")
     private ExerciseCategory category;
